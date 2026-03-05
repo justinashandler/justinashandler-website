@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Justina Shandler</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    // Unregister any legacy service workers (from old Squarespace mirror)
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(regs => {
+        regs.forEach(r => r.unregister());
+      });
+    }
+  </script>
 </head>
 <body>
 
