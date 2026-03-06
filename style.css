@@ -380,13 +380,32 @@ footer {
   opacity: 0.6;
 }
 
-footer a {
-  color: var(--text);
-  text-decoration: none;
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
 
-footer a:hover {
-  text-decoration: underline;
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px inset;
+  color: var(--text);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.social-icons a:hover {
+  opacity: 0.5;
+}
+
+.social-icons svg {
+  width: 15px;
+  height: 15px;
 }
 
 /* ── Responsive ── */
