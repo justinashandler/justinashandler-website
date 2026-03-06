@@ -18,12 +18,14 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Install Wrangler
         run: npm install -g wrangler
 
       - name: Deploy to Cloudflare Pages
-        run: wrangler pages deploy . --project-name justinashandler-website
+        run: |
+          npm install -g wrangler
+          echo "${{ secrets.CLOUDFLARE_API_TOKEN }}" | wrangler pages deploy . --project-name justinashandler-website
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
