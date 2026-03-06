@@ -2,9 +2,9 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "astro-dev",
+      "name": "dev",
       "runtimeExecutable": "/opt/homebrew/bin/node",
-      "runtimeArgs": ["/Users/justinashandler/Desktop/website/site-archive/www.justinashandler.com/node_modules/.bin/astro", "dev", "--port", "4321"],
+      "runtimeArgs": ["/Users/justinashandler/Desktop/website/node_modules/.bin/astro", "dev", "--port", "4321", "--host", "127.0.0.1"],
       "port": 4321
     }
   ]
