@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Justina Shandler">
+
+  <svg class="wave-divider" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,30 Q180,10 360,30 Q540,50 720,30 Q900,10 1080,30 Q1260,50 1440,30" stroke="#482b1c" stroke-width="2.5" fill="none"/>
+  </svg>
+
+  <p class="tagline">✨ Singer-songwriter ✨ Composer for media ✨ Music mentor ✨</p>
+
+  <img class="hero-image" src="/images/Justina_Shandler2.jpg" alt="Justina Shandler">
+
+  <div class="spotify-wrap">
+    <iframe
+      style="border-radius:12px"
+      src="https://open.spotify.com/embed/artist/6nafo2qIWXzs72eSj1ZJMw?utm_source=generator"
+      width="640"
+      height="152"
+      frameborder="0"
+      allowfullscreen
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
+    ></iframe>
+  </div>
+
+  <div class="instagram-section">
+    <h2>FOLLOW ALONG</h2>
+    <behold-widget feed-id="oWHbHK3y6Djz5GAeovN4"></behold-widget>
+    <script>
+      (() => {
+        const d = document, s = d.createElement('script');
+        s.type = 'module';
+        s.src = 'https://w.behold.so/widget.js';
+        d.head.append(s);
+      })();
+    </script>
+  </div>
+
+</Layout>

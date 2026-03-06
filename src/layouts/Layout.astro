@@ -1,0 +1,44 @@
+---
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  activePage?: string;
+}
+
+const { title, activePage } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{title}</title>
+  <script>
+    // Unregister any legacy service workers (from old Squarespace mirror)
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(regs => {
+        regs.forEach(r => r.unregister());
+      });
+    }
+  </script>
+</head>
+<body>
+
+  <nav class="nav">
+    <a class="nav-logo" href="/">Justina Shandler</a>
+    <ul class="nav-links">
+      <li><a class={activePage === 'creative-recess' ? 'active' : ''} href="/creative-recess">Creative Recess</a></li>
+      <li><a class={activePage === 'about' ? 'active' : ''} href="/about">About</a></li>
+      <li><a class={activePage === 'contact' ? 'active' : ''} href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <slot />
+
+  <Footer />
+
+</body>
+</html>

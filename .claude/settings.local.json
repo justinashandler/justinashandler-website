@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wget --version)",
+      "Bash(node --version)",
+      "Bash(brew list)",
+      "Bash(python3 -c \"import urllib.request, html.parser, os; print\\(''urllib available''\\)\")",
+      "Bash(/System/Library/Frameworks/Python.framework/Versions/*/bin/python3)",
+      "Bash(xcode-select -p)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(sw_vers)",
+      "Bash(xcode-select --install)",
+      "Bash(python3 -c \":*)",
+      "Bash(python3 -:*)",
+      "Bash(ls -la /Users/justinashandler/Desktop/website/site-archive/*.html /Users/justinashandler/Desktop/website/site-archive/*.css)",
+      "Bash(ls -la ~/Desktop/website/site-archive/*.html ~/Desktop/website/site-archive/*.css)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git -C /Users/justinashandler/Desktop/website status)",
+      "Bash(git add contact.html)",
+      "Bash(git commit:*)",
+      "Bash(git push origin main)",
+      "Bash(git add index.html)",
+      "Bash(npx wrangler pages deploy . --project-name justinashandler-website)",
+      "Bash(export PATH=\"/opt/homebrew/bin:$PATH\")",
+      "Bash(wrangler pages deploy . --project-name justinashandler-website --commit-message \"Rebuild site: Behold.so Instagram feed, Formspree contact form, SW cleanup\")",
+      "Bash(git add .github/workflows/deploy.yml)",
+      "Bash(gh run list --repo justinashandler/justinashandler-website --limit 3)",
+      "Bash(gh run list --workflow=deploy.yml --limit=3)",
+      "Bash(curl -s https://api.github.com/repos/justinashandler/justinashandler-website/actions/runs?per_page=5)",
+      "Bash(python3 -m json.tool)",
+      "Bash(curl -s -H \"Accept: application/vnd.github.v3+json\" 'https://api.github.com/repos/justinashandler/justinashandler-website/actions/workflows/deploy.yml/runs')",
+      "WebFetch(domain:www.justinashandler.com)",
+      "Bash(git add index.html about.html contact.html creative-recess.html)",
+      "Bash(curl -s 'https://www.justinashandler.com')",
+      "Bash(python3:*)",
+      "Bash(git add index.html about.html contact.html creative-recess.html style.css)",
+      "Bash(npm install)",
+      "Bash(npm run build)",
+      "Bash(pkill -f \"astro dev\")",
+      "Bash(git add -A)"
+    ]
+  }
+}
