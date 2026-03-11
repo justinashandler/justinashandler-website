@@ -2,36 +2,92 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Justina Shandler">
+<Layout title="Justina Shandler" activePage="home">
 
-  <svg class="wave-divider" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-    <path d="M0,30 Q180,10 360,30 Q540,50 720,30 Q900,10 1080,30 Q1260,50 1440,30" stroke="#482b1c" stroke-width="2.5" fill="none"/>
-  </svg>
+  <!-- ── HERO ── -->
+  <section class="home-hero">
+    <div class="home-hero-text">
+      <span class="annotation annotation-intro">hi, i'm</span>
+      <h1 class="home-name">Justina<br>Shandler.</h1>
+      <p class="home-roles">songwriter · teacher · certified weirdo</p>
+      <p class="home-bio">I write songs about real life. I teach people to write songs about their real life. And I will not let you stay creatively stuck — that's a promise, not a tagline.</p>
+      <div class="home-ctas">
+        <a href="/creative-recess" class="btn btn-primary">Join Mess Is Medicine →</a>
+        <a href="#music" class="btn btn-ghost">hear the music ↓</a>
+      </div>
+    </div>
+    <div class="home-hero-img">
+      <img src="/images/hero-pentagon.png" alt="Justina Shandler at the piano">
+    </div>
+  </section>
 
-  <p class="tagline">✨ Singer-songwriter ✨ Composer for media ✨ Music mentor ✨</p>
-
-  <img class="hero-image" src="/images/Justina_Shandler2.jpg" alt="Justina Shandler">
-
-  <div class="spotify-wrap">
-    <iframe
-      style="border-radius:12px"
-      src="https://open.spotify.com/embed/artist/6nafo2qIWXzs72eSj1ZJMw?utm_source=generator"
-      width="640"
-      height="152"
-      frameborder="0"
-      allowfullscreen
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy"
-    ></iframe>
+  <!-- ── TICKER ── -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-inner">
+      <span>✦ singer-songwriter</span>
+      <span>✦ music for film &amp; tv</span>
+      <span>✦ creative mentor</span>
+      <span>✦ mess is medicine</span>
+      <span>✦ songwriter since birth, probably</span>
+      <span>✦ singer-songwriter</span>
+      <span>✦ music for film &amp; tv</span>
+      <span>✦ creative mentor</span>
+      <span>✦ mess is medicine</span>
+      <span>✦ songwriter since birth, probably</span>
+    </div>
   </div>
 
+  <!-- ── MUSIC ── -->
+  <section class="music-section" id="music">
+    <div class="music-layout">
+      <div class="music-photo-wrap">
+        <img src="/images/studio-2.jpg" alt="Justina in the studio" class="studio-photo">
+        <img src="/images/justina-head.png" alt="" class="head-float">
+      </div>
+      <div class="music-content">
+        <span class="annotation">the music</span>
+        <h2>Songs about<br>real life.</h2>
+        <p>Stream on Spotify, Apple Music, wherever you get your music.</p>
+        <div class="spotify-wrap">
+          <iframe
+            style="border-radius:4px"
+            src="https://open.spotify.com/embed/artist/6nafo2qIWXzs72eSj1ZJMw?utm_source=generator"
+            width="100%"
+            height="152"
+            frameborder="0"
+            allowfullscreen
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MIM PROMO ── -->
+  <section class="mim-promo">
+    <div class="mim-promo-inner">
+      <div class="mim-promo-text">
+        <span class="annotation annotation-light">starting march 22</span>
+        <h2>30 days.<br>$250.<br>No excuses.</h2>
+        <p>Mess Is Medicine is the 30-day creative challenge for people who keep saying "I'll start tomorrow." You know who you are.</p>
+        <a href="/creative-recess" class="btn btn-cream">I'm in. →</a>
+      </div>
+      <div class="mim-promo-img">
+        <img src="/images/mim-color.png" alt="Justina at the piano">
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EMAIL SIGNUP ── -->
   <section class="email-signup-home">
     <h2>Your first 3 prompts are on me.</h2>
     <script async data-uid="d99a3f9d87" src="https://justina-shandler.kit.com/d99a3f9d87/index.js"></script>
   </section>
 
+  <!-- ── INSTAGRAM ── -->
   <div class="instagram-section">
-    <h2>FOLLOW ALONG</h2>
+    <h2>follow along</h2>
     <behold-widget feed-id="oWHbHK3y6Djz5GAeovN4"></behold-widget>
     <script>
       (() => {
