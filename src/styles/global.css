@@ -752,6 +752,19 @@ footer {
   text-decoration-thickness: 2px;
   text-underline-offset: 6px;
 }
+/* Wavy on dark backgrounds (cr-card) */
+.cr-card .wavy {
+  text-decoration-color: rgba(253, 232, 216, 0.55);
+}
+
+/* Hero credibility note */
+.hero-cred {
+  font-family: var(--font-hand);
+  font-size: 0.95rem;
+  color: var(--amber);
+  margin: -8px 0 20px;
+  opacity: 0.9;
+}
 
 /* Section labels get a star prefix */
 .section-label::before {
@@ -905,8 +918,16 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .nav { padding: 20px 24px; }
-  .nav-logo { font-size: 1rem; }
+  .nav { padding: 16px 20px; }
+  .nav-links { gap: 16px; }
+  .nav-links a { font-size: 0.85rem; }
+}
+
+@media (max-width: 480px) {
+  .nav { flex-wrap: wrap; gap: 10px; padding: 14px 20px 10px; }
+  .nav-logo { flex: 0 0 100%; font-size: 1rem; }
+  .nav-links { gap: 16px; }
+  .nav-links a { font-size: 0.82rem; }
   .about-photo { float: none; width: 100%; max-width: 100%; margin: 0 0 32px 0; transform: rotate(0.5deg); }
   h1 { font-size: 2.2rem; }
   .music-section { padding: 56px 24px; }

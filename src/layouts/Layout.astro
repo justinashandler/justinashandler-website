@@ -5,9 +5,18 @@ import '../styles/global.css';
 interface Props {
   title: string;
   activePage?: string;
+  description?: string;
+  ogImage?: string;
 }
 
-const { title, activePage } = Astro.props;
+const {
+  title,
+  activePage,
+  description = "Singer-songwriter, creative mentor, and certified weirdo. Writing songs about real life — and helping people write theirs.",
+  ogImage = "/images/hero-main.png"
+} = Astro.props;
+
+const siteUrl = "https://justinashandler.com";
 ---
 
 <!doctype html>
@@ -16,6 +25,24 @@ const { title, activePage } = Astro.props;
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{title}</title>
+  <meta name="description" content={description}>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content={siteUrl}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:image" content={`${siteUrl}${ogImage}`}>
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={`${siteUrl}${ogImage}`}>
+
   <script>
     // Unregister any legacy service workers (from old Squarespace mirror)
     if ('serviceWorker' in navigator) {
