@@ -707,6 +707,14 @@ footer {
   margin: 0 auto 8px;
 }
 
+/* Doodle arrow above the Join Now button */
+.cr-doodle-cta {
+  display: block;
+  margin: 4px auto -6px;
+  transform: rotate(8deg);
+  opacity: 0.85;
+}
+
 /* Section splatter divider */
 .section-splatter {
   text-align: center;
