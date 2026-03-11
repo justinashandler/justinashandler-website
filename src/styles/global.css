@@ -428,6 +428,28 @@ h3 {
 }
 
 /* ─────────────────────────────
+   ABOUT — MUSO STATS
+───────────────────────────── */
+.muso-stats {
+  margin-top: 64px;
+}
+.muso-tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 760px;
+}
+.muso-tile {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(42,21,9,0.13);
+  transform: rotate(-0.5deg);
+}
+.muso-tile:nth-child(2) {
+  transform: rotate(0.8deg);
+}
+
+/* ─────────────────────────────
    CONTACT PAGE
 ───────────────────────────── */
 .contact-wrap {
