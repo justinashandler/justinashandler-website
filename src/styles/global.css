@@ -690,6 +690,13 @@ footer {
   max-width: 420px;
 }
 
+/* Centered hero card button */
+.cr-btn-centered {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 8px;
+}
+
 /* Section splatter divider */
 .section-splatter {
   text-align: center;

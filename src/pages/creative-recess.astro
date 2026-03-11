@@ -15,19 +15,25 @@ import Layout from '../layouts/Layout.astro';
     <div class="cr-card">
       <div class="cr-glow"></div>
 
-      <!-- Paint splatter decoration -->
+      <!-- Organic doodle decoration -->
       <svg class="card-splatter" viewBox="0 0 600 400" fill="none" aria-hidden="true">
-        <circle cx="38" cy="90" r="14" fill="#d64063" opacity="0.18"/>
-        <circle cx="24" cy="72" r="6" fill="#d64063" opacity="0.12"/>
-        <circle cx="52" cy="110" r="4" fill="#d64063" opacity="0.1"/>
-        <circle cx="18" cy="105" r="3" fill="#7059a6" opacity="0.14"/>
-        <circle cx="558" cy="290" r="12" fill="#d64063" opacity="0.16"/>
-        <circle cx="575" cy="310" r="7" fill="#d64063" opacity="0.1"/>
-        <circle cx="540" cy="270" r="5" fill="#7059a6" opacity="0.12"/>
-        <circle cx="570" cy="260" r="3" fill="#d64063" opacity="0.09"/>
-        <circle cx="300" cy="375" r="9" fill="#7059a6" opacity="0.13"/>
-        <circle cx="285" cy="388" r="4" fill="#d64063" opacity="0.1"/>
-        <circle cx="320" cy="382" r="5" fill="#d64063" opacity="0.08"/>
+        <!-- top-left: ink splat blob + satellite drops -->
+        <path d="M30 58 C22 40 40 22 57 30 C67 36 70 54 58 64 C46 74 30 70 30 58Z" fill="#d64063" opacity="0.22"/>
+        <path d="M8 33 C10 22 24 20 25 30 C26 37 18 42 10 37Z" fill="#d64063" opacity="0.16"/>
+        <path d="M54 12 C56 6 65 7 64 14 C63 20 54 20 54 12Z" fill="#d64063" opacity="0.13"/>
+        <path d="M4 18 C5 13 10 13 10 18 C10 22 4 22 4 18Z" fill="#d64063" opacity="0.1"/>
+        <!-- top-right: pencil asterisk scribble -->
+        <path d="M526 28 L536 56" stroke="#7059a6" stroke-width="2" stroke-linecap="round" opacity="0.32"/>
+        <path d="M514 34 L548 50" stroke="#7059a6" stroke-width="2" stroke-linecap="round" opacity="0.32"/>
+        <path d="M514 50 L548 34" stroke="#7059a6" stroke-width="2" stroke-linecap="round" opacity="0.32"/>
+        <path d="M526 26 C527 23 530 22 532 24 C534 27 532 30 529 29Z" fill="#7059a6" opacity="0.2"/>
+        <!-- bottom-left: brush stroke smear -->
+        <path d="M6 348 C40 336 90 354 130 342 C155 334 168 348 178 340" stroke="#d64063" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.16"/>
+        <path d="M4 362 C28 352 62 366 88 356" stroke="#d64063" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.11"/>
+        <!-- bottom-right: ink splat blob -->
+        <path d="M548 338 C538 320 560 308 572 320 C582 330 578 350 564 356 C550 362 542 352 548 338Z" fill="#d64063" opacity="0.19"/>
+        <path d="M584 315 C586 307 594 307 594 315 C594 321 585 321 584 315Z" fill="#7059a6" opacity="0.15"/>
+        <path d="M592 328 C593 323 598 323 598 328 C598 332 592 332 592 328Z" fill="#d64063" opacity="0.12"/>
       </svg>
 
       <div class="cr-tags">
@@ -43,8 +49,7 @@ import Layout from '../layouts/Layout.astro';
         <li>the freedom to stop curating yourself</li>
       </ul>
       <p class="cr-medicine-line">Perfection is boring. Mess is medicine.</p>
-      <p class="cr-spots">Only 30 spots · <strong>$250</strong></p>
-      <a class="btn btn-primary" href="https://buy.stripe.com/14A3cwbULgLleQxceP3Je01" target="_blank" rel="noopener">Join Now · $250</a>
+      <a class="btn btn-primary cr-btn-centered" href="https://buy.stripe.com/14A3cwbULgLleQxceP3Je01" target="_blank" rel="noopener">Join Now · $250</a>
       <p class="trust-bar">🔒 Secure checkout via Stripe &nbsp;·&nbsp; Live calls Sundays 2pm PT &nbsp;·&nbsp; Spots capped at 30</p>
     </div>
 
@@ -53,18 +58,19 @@ import Layout from '../layouts/Layout.astro';
       <img src="/images/studio-1.jpg" alt="Justina at the piano" class="cr-photo-main">
     </div>
 
-    <!-- splatter between sections -->
+    <!-- brush stroke divider -->
     <div class="section-splatter" aria-hidden="true">
-      <svg viewBox="0 0 700 50" fill="none">
-        <circle cx="60" cy="28" r="7" fill="#d64063" opacity="0.22"/>
-        <circle cx="80" cy="16" r="4" fill="#d64063" opacity="0.16"/>
-        <circle cx="48" cy="42" r="5" fill="#7059a6" opacity="0.18"/>
-        <circle cx="350" cy="22" r="6" fill="#d64063" opacity="0.14"/>
-        <circle cx="365" cy="38" r="3" fill="#7059a6" opacity="0.18"/>
-        <circle cx="340" cy="10" r="4" fill="#d64063" opacity="0.12"/>
-        <circle cx="630" cy="32" r="7" fill="#d64063" opacity="0.2"/>
-        <circle cx="648" cy="16" r="4" fill="#7059a6" opacity="0.16"/>
-        <circle cx="618" cy="44" r="5" fill="#d64063" opacity="0.14"/>
+      <svg viewBox="0 0 700 60" fill="none">
+        <!-- ink blob anchor on left -->
+        <path d="M24 34 C18 24 30 16 40 22 C47 26 48 38 40 43 C32 48 22 42 24 34Z" fill="#d64063" opacity="0.22"/>
+        <path d="M8 22 C9 16 16 16 16 22 C16 27 8 27 8 22Z" fill="#d64063" opacity="0.15"/>
+        <!-- brush stroke sweeping right -->
+        <path d="M44 30 C120 18 220 40 340 26 C420 16 500 36 560 24" stroke="#d64063" stroke-width="4.5" stroke-linecap="round" fill="none" opacity="0.18"/>
+        <path d="M44 38 C100 28 180 46 280 34" stroke="#d64063" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.11"/>
+        <!-- pencil asterisk on right -->
+        <path d="M600 18 L608 42" stroke="#7059a6" stroke-width="1.8" stroke-linecap="round" opacity="0.28"/>
+        <path d="M590 24 L618 36" stroke="#7059a6" stroke-width="1.8" stroke-linecap="round" opacity="0.28"/>
+        <path d="M590 36 L618 24" stroke="#7059a6" stroke-width="1.8" stroke-linecap="round" opacity="0.28"/>
       </svg>
     </div>
 
@@ -149,15 +155,19 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </section>
 
-    <!-- splatter before FAQ -->
+    <!-- brush stroke divider 2 -->
     <div class="section-splatter" aria-hidden="true">
-      <svg viewBox="0 0 700 50" fill="none">
-        <circle cx="120" cy="24" r="6" fill="#7059a6" opacity="0.2"/>
-        <circle cx="138" cy="38" r="3" fill="#d64063" opacity="0.18"/>
-        <circle cx="108" cy="12" r="4" fill="#d64063" opacity="0.15"/>
-        <circle cx="480" cy="30" r="7" fill="#d64063" opacity="0.18"/>
-        <circle cx="498" cy="14" r="4" fill="#7059a6" opacity="0.16"/>
-        <circle cx="466" cy="42" r="5" fill="#d64063" opacity="0.12"/>
+      <svg viewBox="0 0 700 60" fill="none">
+        <!-- pencil asterisk on left -->
+        <path d="M80 16 L88 40" stroke="#7059a6" stroke-width="1.8" stroke-linecap="round" opacity="0.28"/>
+        <path d="M70 22 L98 34" stroke="#7059a6" stroke-width="1.8" stroke-linecap="round" opacity="0.28"/>
+        <path d="M70 34 L98 22" stroke="#7059a6" stroke-width="1.8" stroke-linecap="round" opacity="0.28"/>
+        <!-- brush stroke sweeping from center right -->
+        <path d="M130 32 C220 20 340 42 460 28 C530 18 600 36 660 24" stroke="#d64063" stroke-width="4.5" stroke-linecap="round" fill="none" opacity="0.18"/>
+        <path d="M140 42 C210 32 310 50 420 38" stroke="#d64063" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.1"/>
+        <!-- ink blob at the end -->
+        <path d="M668 28 C662 18 678 12 685 20 C691 27 686 38 676 40 C666 42 660 36 668 28Z" fill="#d64063" opacity="0.2"/>
+        <path d="M695 16 C696 10 703 10 703 16 C703 21 695 21 695 16Z" fill="#d64063" opacity="0.13"/>
       </svg>
     </div>
 
