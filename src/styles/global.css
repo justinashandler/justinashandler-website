@@ -567,16 +567,26 @@ footer {
   --accent: #d64063;
 }
 
-/* Hero card — deep forest green */
+/* Hero card — splatter blob shape (background comes from .cr-card-blob SVG) */
 .cr-card {
-  background: linear-gradient(160deg, #142e1e 0%, #1e4a30 55%, #163824 100%);
-  border-radius: 16px;
+  background: none;
+  border-radius: 0;
   padding: 72px 48px 64px;
   text-align: center;
-  margin: 0 auto 40px;
+  margin: 0 auto 60px;
   position: relative;
-  overflow: hidden;
-  box-shadow: 0 8px 48px rgba(10, 30, 18, 0.45);
+  overflow: visible;
+  isolation: isolate;
+}
+
+/* Blob SVG that IS the card's visual background */
+.cr-card-blob {
+  position: absolute;
+  z-index: -1;
+  top: -9%; left: -7%;
+  width: 114%; height: 118%;
+  pointer-events: none;
+  filter: drop-shadow(0 8px 44px rgba(10, 30, 18, 0.55));
 }
 .cr-card .cr-title  { color: var(--cream); }
 .cr-card .cr-tagline { color: rgba(250,247,238,0.6); }
