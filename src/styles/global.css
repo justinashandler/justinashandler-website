@@ -416,16 +416,40 @@ h3 {
 /* ─────────────────────────────
    ABOUT PAGE
 ───────────────────────────── */
-.two-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: start;
+/* About page layout */
+.about-header {
+  margin-bottom: 36px;
+}
+.about-header .annotation {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1.05rem;
+}
+.about-header h1 {
+  margin: 0;
+}
+.about-body::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.about-photo {
+  float: right;
+  width: 42%;
+  max-width: 420px;
+  margin: 0 0 32px 52px;
+  border-radius: 10px;
+  transform: rotate(1.5deg);
+  box-shadow: 5px 8px 32px rgba(42,21,9,0.14);
 }
 .bio p {
   margin: 0 0 20px;
-  font-size: 1rem;
-  line-height: 1.7;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+.bio a {
+  color: var(--amber);
+  text-decoration: underline;
 }
 
 /* ─────────────────────────────
@@ -883,7 +907,7 @@ footer {
 @media (max-width: 768px) {
   .nav { padding: 20px 24px; }
   .nav-logo { font-size: 1rem; }
-  .two-col { grid-template-columns: 1fr; }
+  .about-photo { float: none; width: 100%; max-width: 100%; margin: 0 0 32px 0; transform: rotate(0.5deg); }
   h1 { font-size: 2.2rem; }
   .music-section { padding: 56px 24px; }
   .instagram-section { padding: 24px; }
