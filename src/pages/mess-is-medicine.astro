@@ -14,7 +14,7 @@ import Layout from '../layouts/Layout.astro';
     <!-- ── HERO CARD ── -->
     <div class="cr-card">
 
-      <!-- Asymmetric splatter blob — the actual card "shape" -->
+      <!-- Splatter blob — bumps on all 4 sides like the bottom -->
       <svg class="cr-card-blob" viewBox="0 0 800 650" preserveAspectRatio="none" aria-hidden="true">
         <defs>
           <linearGradient id="blobGrad" x1="10%" y1="5%" x2="90%" y2="95%">
@@ -23,20 +23,40 @@ import Layout from '../layouts/Layout.astro';
             <stop offset="100%" stop-color="#163824"/>
           </linearGradient>
         </defs>
-        <!-- Main asymmetric splatter blob — chunky left, tapered right, irregular edges -->
-        <path d="M 45 -8 C 95 -52 210 -38 320 -6 C 375 12 408 -42 498 -15 C 570 6 598 -50 692 -22 C 748 -4 798 -18 828 22 C 858 62 842 118 832 165 C 862 218 848 275 830 316 C 865 368 845 428 826 468 C 852 512 844 560 822 595 C 800 632 762 652 718 644 C 668 665 588 638 508 650 C 435 660 358 634 285 648 C 218 660 148 632 88 644 C 42 653 -14 618 -20 578 C -48 538 -28 488 -22 446 C -58 404 -40 350 -30 306 C -62 258 -35 205 -46 160 C -57 118 -18 82 -8 48 C 2 22 25 8 45 -8 Z" fill="url(#blobGrad)"/>
-        <!-- Top-right upward spike — paint flew up -->
-        <path d="M 700 -50 C 720 -85 760 -95 778 -65 C 794 -38 772 -12 748 -18 C 728 -22 710 -36 700 -50 Z" fill="#163824" opacity="0.9"/>
-        <!-- Right-side drip extending down -->
-        <path d="M 830 520 C 864 542 882 598 860 630 C 840 660 814 652 816 622 C 818 594 824 556 830 520 Z" fill="#1a3d24" opacity="0.88"/>
-        <!-- Bottom center blob pushing down -->
-        <path d="M 388 648 C 396 692 424 714 446 700 C 466 688 463 656 442 650 Z" fill="#163824" opacity="0.9"/>
-        <!-- Top-left satellite drop (disconnected) -->
-        <path d="M 10 -44 C -10 -80 -56 -72 -58 -40 C -61 -12 -28 2 -8 -8 C 6 -18 10 -32 10 -44 Z" fill="#1a3622" opacity="0.85"/>
-        <!-- Bottom-right tiny drip -->
-        <path d="M 718 644 C 742 670 748 708 728 716 C 710 723 698 704 708 680 C 714 664 716 653 718 644 Z" fill="#163824" opacity="0.85"/>
-        <!-- Small left-side concave blob that makes it look like paint splashed out -->
-        <path d="M -22 446 C -70 430 -90 468 -65 490 C -44 510 -22 490 -22 446 Z" fill="#163824" opacity="0.78"/>
+        <!-- Main blob: 3–4 small rounded bumps on every side -->
+        <path d="
+          M 55 20
+          C 90 -35, 155 -10, 210 -40
+          C 255 -60, 295 -15, 345 -42
+          C 390 -64, 434 -18, 482 -46
+          C 526 -66, 568 -18, 618 -46
+          C 658 -64, 704 -22, 750 -12
+          C 802 18, 836 74, 828 132
+          C 853 188, 843 250, 851 304
+          C 863 354, 840 402, 855 452
+          C 866 502, 845 550, 830 590
+          C 810 624, 780 652, 742 640
+          C 702 662, 654 636, 608 654
+          C 563 670, 513 640, 466 657
+          C 416 672, 366 642, 316 658
+          C 266 674, 216 640, 166 657
+          C 120 670, 74 640, 34 654
+          C -4 642, -38 620, -30 580
+          C -57 544, -33 496, -51 450
+          C -67 404, -41 358, -57 312
+          C -70 266, -41 220, -57 172
+          C -67 130, -30 92, -12 54
+          C 8 27, 32 16, 55 20
+          Z
+        " fill="url(#blobGrad)"/>
+        <!-- Top-left corner satellite drop -->
+        <path d="M 55 20 C 30 -28 -18 -32 -20 -6 C -22 16 -2 26 18 16 C 36 7 48 13 55 20Z" fill="#1a3d24" opacity="0.85"/>
+        <!-- Top-right corner satellite drop -->
+        <path d="M 750 -12 C 774 -56 824 -63 831 -36 C 838 -12 814 6 792 -1 C 773 -8 760 -11 750 -12Z" fill="#163824" opacity="0.88"/>
+        <!-- Bottom-left corner drop -->
+        <path d="M 34 654 C 10 680 -14 696 -20 675 C -25 657 -6 642 15 648 C 27 651 32 652 34 654Z" fill="#1a3622" opacity="0.82"/>
+        <!-- Bottom-right corner drop -->
+        <path d="M 742 640 C 763 664 768 700 749 709 C 731 716 719 698 730 674 C 736 657 739 646 742 640Z" fill="#163824" opacity="0.85"/>
       </svg>
 
       <div class="cr-glow"></div>
