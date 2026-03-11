@@ -563,22 +563,24 @@ footer {
   max-width: 900px;
   margin: 0 auto;
   padding: 40px 48px 80px;
+  /* Coral accent replaces amber on MIM page */
+  --accent: #d64063;
 }
 
-/* Hero card */
+/* Hero card — deep forest green */
 .cr-card {
-  background: linear-gradient(160deg, var(--dark) 0%, #3d2214 55%, #5a3120 100%);
+  background: linear-gradient(160deg, #142e1e 0%, #1e4a30 55%, #163824 100%);
   border-radius: 16px;
   padding: 72px 48px 64px;
   text-align: center;
   margin: 0 auto 40px;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 8px 40px rgba(26, 15, 8, 0.35);
+  box-shadow: 0 8px 48px rgba(10, 30, 18, 0.45);
 }
 .cr-card .cr-title  { color: var(--cream); }
 .cr-card .cr-tagline { color: rgba(250,247,238,0.6); }
-.cr-card .cr-outcome { color: rgba(250,247,238,0.85); }
+.cr-card .cr-outcome { color: rgba(250,247,238,0.88); }
 .cr-card .trust-bar  { color: rgba(250,247,238,0.4); }
 
 .cr-glow {
@@ -586,34 +588,47 @@ footer {
   top: -80px; left: 50%;
   transform: translateX(-50%);
   width: 700px; height: 400px;
-  background: radial-gradient(ellipse, rgba(193,122,58,0.25) 0%, rgba(90,49,32,0.15) 50%, transparent 75%);
+  background: radial-gradient(ellipse, rgba(214,64,99,0.2) 0%, rgba(20,60,35,0.1) 50%, transparent 75%);
   pointer-events: none;
 }
 
+/* Card paint-splatter doodles */
+.card-splatter {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+}
+
+/* Tags — no pill shape, just slanted Caveat text */
 .cr-tags {
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: 20px;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  align-items: baseline;
 }
 .cr-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  border-radius: 4px;
-  padding: 6px 16px;
-  font-size: 13px;
-  font-weight: 600;
-  margin-bottom: 20px;
+  background: none !important;
+  border: none !important;
+  padding: 0;
+  font-family: var(--font-hand);
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  display: inline-block;
+  margin-bottom: 0;
 }
-.cr-tag-orange { background: #f97316; color: white; }
+.cr-tag-orange {
+  color: rgba(255, 175, 120, 0.95);
+  transform: rotate(-2.5deg);
+}
 .cr-tag-dark {
-  background: transparent;
-  color: rgba(250,247,238,0.7);
-  border: 1.5px solid rgba(250,247,238,0.25);
+  color: rgba(253, 232, 216, 0.55);
+  transform: rotate(1.5deg);
 }
-.cr-tag-green { background: #22c55e; color: white; }
+.cr-tag-green { display: none; }
 
 .cr-title {
   font-family: 'Young Serif', serif;
@@ -635,41 +650,76 @@ footer {
 }
 .cr-spots {
   display: inline-block;
-  background: rgba(193,122,58,0.18);
-  color: #e8aa6a;
-  border: 1px solid rgba(193,122,58,0.35);
+  background: rgba(214,64,99,0.15);
+  color: rgba(255,180,180,0.95);
+  border: 1px solid rgba(214,64,99,0.3);
   padding: 6px 18px;
   border-radius: 4px;
   font-weight: 600;
   margin-bottom: 20px;
   font-size: 0.95rem;
 }
+
+/* Hero bullet list */
+.cr-leaves {
+  list-style: none;
+  padding: 8px 0;
+  margin: 0 auto 16px;
+  max-width: 420px;
+  text-align: left;
+}
+.cr-leaves li {
+  padding: 5px 0 5px 24px;
+  position: relative;
+  color: rgba(253, 232, 216, 0.88);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.cr-leaves li::before {
+  content: '•';
+  position: absolute;
+  left: 6px;
+  color: var(--accent);
+  opacity: 0.9;
+}
+.cr-medicine-line {
+  font-family: var(--font-hand);
+  font-size: 1.4rem;
+  color: rgba(253, 232, 216, 0.7);
+  margin: 8px auto 28px;
+  max-width: 420px;
+}
+
+/* Section splatter divider */
+.section-splatter {
+  text-align: center;
+  margin: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+.section-splatter svg { width: 100%; max-width: 700px; }
 .trust-bar {
   font-size: 0.82rem;
   opacity: 0.55;
   margin-top: 16px;
 }
 
-/* MIM photo additions */
+/* MIM photo — solo centered */
 .cr-photos-row {
   display: flex;
-  gap: 16px;
   margin: 48px 0 0;
-  align-items: flex-end;
   justify-content: center;
 }
 .cr-photos-row img {
   border-radius: 4px;
-  box-shadow: 4px 6px 20px rgba(26,15,8,0.14);
+  box-shadow: 5px 8px 28px rgba(26,15,8,0.18);
 }
 .cr-photo-main {
-  width: 55%;
-  transform: rotate(-1deg);
+  width: 72%;
+  max-width: 580px;
+  transform: rotate(-1.5deg);
 }
-.cr-photo-side {
-  width: 40%;
-  transform: rotate(2deg);
-}
+.cr-photo-side { display: none; }
 
 /* Sections */
 .cr-section {
@@ -678,8 +728,8 @@ footer {
 }
 .section-label {
   font-family: 'Caveat', cursive;
-  font-size: 1.1rem;
-  opacity: 0.5;
+  font-size: 1.4rem;
+  opacity: 0.75;
   margin: 0 0 10px;
   letter-spacing: 0;
   text-transform: none;

@@ -11,26 +11,61 @@ import Layout from '../layouts/Layout.astro';
 
   <div class="cr-wrap">
 
-    <!-- ── HERO ── -->
+    <!-- ── HERO CARD ── -->
     <div class="cr-card">
       <div class="cr-glow"></div>
+
+      <!-- Paint splatter decoration -->
+      <svg class="card-splatter" viewBox="0 0 600 400" fill="none" aria-hidden="true">
+        <circle cx="38" cy="90" r="14" fill="#d64063" opacity="0.18"/>
+        <circle cx="24" cy="72" r="6" fill="#d64063" opacity="0.12"/>
+        <circle cx="52" cy="110" r="4" fill="#d64063" opacity="0.1"/>
+        <circle cx="18" cy="105" r="3" fill="#7059a6" opacity="0.14"/>
+        <circle cx="558" cy="290" r="12" fill="#d64063" opacity="0.16"/>
+        <circle cx="575" cy="310" r="7" fill="#d64063" opacity="0.1"/>
+        <circle cx="540" cy="270" r="5" fill="#7059a6" opacity="0.12"/>
+        <circle cx="570" cy="260" r="3" fill="#d64063" opacity="0.09"/>
+        <circle cx="300" cy="375" r="9" fill="#7059a6" opacity="0.13"/>
+        <circle cx="285" cy="388" r="4" fill="#d64063" opacity="0.1"/>
+        <circle cx="320" cy="382" r="5" fill="#d64063" opacity="0.08"/>
+      </svg>
+
       <div class="cr-tags">
-        <span class="cr-tag cr-tag-orange">30-Day Creative Challenge</span>
+        <span class="cr-tag cr-tag-orange">30-day creative challenge</span>
         <span class="cr-tag cr-tag-dark">March 22 – April 12, 2026</span>
       </div>
       <h1 class="cr-title"><span class="wavy">Mess Is Medicine</span></h1>
       <p class="cr-tagline">where perfectionism goes to die</p>
-      <p class="cr-outcome">Write every day for 30 days, even just 2 minutes. You'll end this month with more songs started than you have all year, a daily creative habit that actually sticks, and proof you don't need to wait to feel ready.</p>
+      <p class="cr-outcome">Write every day for 30 days… even if it's just 2 minutes. You'll leave with:</p>
+      <ul class="cr-leaves">
+        <li>more material than you wrote all year</li>
+        <li>a daily creative habit that actually sticks</li>
+        <li>the freedom to stop curating yourself</li>
+      </ul>
+      <p class="cr-medicine-line">Perfection is boring. Mess is medicine.</p>
       <p class="cr-spots">Only 30 spots · <strong>$250</strong></p>
-      <!-- Replace href with your new Stripe payment link -->
       <a class="btn btn-primary" href="https://buy.stripe.com/14A3cwbULgLleQxceP3Je01" target="_blank" rel="noopener">Join Now · $250</a>
       <p class="trust-bar">🔒 Secure checkout via Stripe &nbsp;·&nbsp; Live calls Sundays 2pm PT &nbsp;·&nbsp; Spots capped at 30</p>
     </div>
 
-    <!-- ── PHOTO ROW ── -->
+    <!-- ── PHOTO ── -->
     <div class="cr-photos-row">
-      <img src="/images/studio-1.jpg" alt="Justina in the studio" class="cr-photo-main">
-      <img src="/images/event-1.jpg" alt="Justina at an event" class="cr-photo-side">
+      <img src="/images/studio-1.jpg" alt="Justina at the piano" class="cr-photo-main">
+    </div>
+
+    <!-- splatter between sections -->
+    <div class="section-splatter" aria-hidden="true">
+      <svg viewBox="0 0 700 50" fill="none">
+        <circle cx="60" cy="28" r="7" fill="#d64063" opacity="0.22"/>
+        <circle cx="80" cy="16" r="4" fill="#d64063" opacity="0.16"/>
+        <circle cx="48" cy="42" r="5" fill="#7059a6" opacity="0.18"/>
+        <circle cx="350" cy="22" r="6" fill="#d64063" opacity="0.14"/>
+        <circle cx="365" cy="38" r="3" fill="#7059a6" opacity="0.18"/>
+        <circle cx="340" cy="10" r="4" fill="#d64063" opacity="0.12"/>
+        <circle cx="630" cy="32" r="7" fill="#d64063" opacity="0.2"/>
+        <circle cx="648" cy="16" r="4" fill="#7059a6" opacity="0.16"/>
+        <circle cx="618" cy="44" r="5" fill="#d64063" opacity="0.14"/>
+      </svg>
     </div>
 
     <!-- ── WHO THIS IS FOR ── -->
@@ -46,7 +81,7 @@ import Layout from '../layouts/Layout.astro';
 
       <div class="dream-outcome">
         <p class="section-label" style="margin-bottom:12px">the end goal</p>
-        <p>The point isn't a perfectly polished finished piece... it's falling in love with the process. Tuning into your unique creative heartbeat. By the end of 30 days, you won't just have fresh work to show for it. You'll have started to rewire your brain to create without all the second-guessing. You won't just "get unstuck"... you'll actually enjoy the playfulness of creating.</p>
+        <p>The point isn't a perfectly polished finished piece… it's falling in love with the process. Tuning into your unique creative heartbeat. By the end of 30 days, you won't just have fresh work to show for it. You'll have started to rewire your brain to create without all the second-guessing. You won't just "get unstuck"… you'll actually enjoy the playfulness of creating.</p>
       </div>
 
       <div class="art-forms-block">
@@ -69,7 +104,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="feature-card">
           <span class="feature-icon">🎥</span>
           <h3>Live calls every Sunday</h3>
-          <p>A quick check-in, a creative pre-game, then we silently write our respective pieces. At the end, a few people share. Writing on a muted Zoom sounds mundane... but somehow it's always magical.</p>
+          <p>A quick check-in, a creative pre-game, then we silently write our respective pieces. At the end, a few people share. Writing on a muted Zoom sounds mundane… but somehow it's always magical.</p>
         </div>
         <div class="feature-card">
           <span class="feature-icon">🏆</span>
@@ -91,7 +126,6 @@ import Layout from '../layouts/Layout.astro';
 
     <!-- ── EMAIL CAPTURE ── -->
     <section class="email-capture-section">
-      <h2>Your first 3 prompts are on me.</h2>
       <script async data-uid="d99a3f9d87" src="https://justina-shandler.kit.com/d99a3f9d87/index.js"></script>
     </section>
 
@@ -99,9 +133,6 @@ import Layout from '../layouts/Layout.astro';
     <section class="cr-section testimonials-section">
       <p class="section-label">people are talkin'</p>
       <h2>Don't take our word for it</h2>
-      <div class="community-photo-wrap">
-        <img src="/images/community.jpg" alt="Mess Is Medicine community" class="community-photo">
-      </div>
       <div class="testimonials">
         <div class="testimonial">
           <blockquote>"I'm breaking through walls that have been there for years. I can't emphasize enough the fact that I came into this challenge so casually, and now it's literally become life-changing. And not because of what I'm doing, but just because I'm DOING. Focused, every day, at least for a few minutes."</blockquote>
@@ -117,6 +148,18 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
     </section>
+
+    <!-- splatter before FAQ -->
+    <div class="section-splatter" aria-hidden="true">
+      <svg viewBox="0 0 700 50" fill="none">
+        <circle cx="120" cy="24" r="6" fill="#7059a6" opacity="0.2"/>
+        <circle cx="138" cy="38" r="3" fill="#d64063" opacity="0.18"/>
+        <circle cx="108" cy="12" r="4" fill="#d64063" opacity="0.15"/>
+        <circle cx="480" cy="30" r="7" fill="#d64063" opacity="0.18"/>
+        <circle cx="498" cy="14" r="4" fill="#7059a6" opacity="0.16"/>
+        <circle cx="466" cy="42" r="5" fill="#d64063" opacity="0.12"/>
+      </svg>
+    </div>
 
     <!-- ── FAQ ── -->
     <section class="cr-section faq-section">
@@ -141,7 +184,7 @@ import Layout from '../layouts/Layout.astro';
 
         <div class="faq-item">
           <h3>Are there live calls with Justina?</h3>
-          <p>Yes, weekly live calls via Zoom, Sundays at 2pm PT. We do a quick check-in, a creative pre-game, then silently write our respective pieces. I offer an optional prompt for each call. At the end, a few people share what they created. It sounds like it would feel the same as writing alone... but somehow it's always magical. Like borrowing each other's flow state.</p>
+          <p>Yes, weekly live calls via Zoom, Sundays at 2pm PT. We do a quick check-in, a creative pre-game, then silently write our respective pieces. I offer an optional prompt for each call. At the end, a few people share what they created. It sounds like it would feel the same as writing alone… but somehow it's always magical. Like borrowing each other's flow state.</p>
         </div>
 
         <div class="faq-item">
@@ -166,17 +209,12 @@ import Layout from '../layouts/Layout.astro';
 
         <div class="faq-item">
           <h3>I have a busy schedule. How much time do I need?</h3>
-          <p>Around 10 minutes a day is enough to make a real difference. But honestly... some people barely participate during the challenge, and months later a prompt rises up and unlocks something big. This is designed for people with full lives. If you feel a yes to this, even if you're not sure how it fits: trust that. Follow your curiosities.</p>
+          <p>Around 2 minutes a day is enough to make a real difference. But honestly… some people barely participate during the challenge, and months later a prompt rises up and unlocks something big. This is designed for people with full lives. If you feel a yes to this, even if you're not sure how it fits: trust that. Follow your curiosities.</p>
         </div>
 
         <div class="faq-item">
           <h3>What's scheduled vs. on my own time?</h3>
           <p>Only the live Zoom calls are scheduled. Everything else, prompts, community, replay videos, is on your own time. If you miss a call, the replay will be there.</p>
-        </div>
-
-        <div class="faq-item">
-          <h3>I'm worried it's too intense / not intense enough.</h3>
-          <p>This is choose-your-own-adventure. There's an accountability buddy option if you want more of a push. Or you can set your own pace. I and the group will support whatever you choose.</p>
         </div>
 
         <div class="faq-item">
@@ -186,7 +224,7 @@ import Layout from '../layouts/Layout.astro';
 
         <div class="faq-item">
           <h3>How do I know my creativity will be safe in this group?</h3>
-          <p>I can't promise you'll feel comfortable at all times... sometimes creative uplevels feel really icky. What I can promise: I don't tolerate hate speech of any kind. I'm an unapologetic ally to People of Color, LGBTQ+ people, Disabled people, and anyone who's ever felt on the fringe. Anyone whose presence doesn't align with these values will be removed, with a full refund.</p>
+          <p>I can't promise you'll feel comfortable at all times… sometimes creative uplevels feel really icky. What I can promise: I don't tolerate hate speech of any kind. I'm an unapologetic ally to People of Color, LGBTQ+ people, Disabled people, and anyone who's ever felt on the fringe. Anyone whose presence doesn't align with these values will be removed, with a full refund.</p>
           <p style="margin-top:12px;opacity:0.82;line-height:1.75">I'm also not a therapist, and this challenge doesn't replace 1:1 healing work. If a prompt touches something too tender, please pause. Trust your inner knowing.</p>
         </div>
 
@@ -198,7 +236,6 @@ import Layout from '../layouts/Layout.astro';
       <h2>Ready to stop waiting?</h2>
       <p class="buy-sub">30 days. 2 minutes a day. A room full of people doing it with you.</p>
       <p class="cr-price">Play Pass: <strong>$250</strong></p>
-      <!-- Replace href with your new Stripe payment link -->
       <a class="btn btn-primary" href="https://buy.stripe.com/14A3cwbULgLleQxceP3Je01" target="_blank" rel="noopener">Join Now · $250</a>
       <div class="trust-badges">
         <span>🔒 Secure checkout via Stripe</span>
