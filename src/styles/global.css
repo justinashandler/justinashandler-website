@@ -8,6 +8,7 @@
   --accent: #c17a3a;
   --dark: #1a0f08;
   --purple: #7059a6;
+  --amber: #c4783a;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -714,6 +715,51 @@ footer {
   opacity: 0.82;
 }
 .features-grid .feature-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+
+/* ─────────────────────────────
+   DOODLES & MESSINESS
+───────────────────────────── */
+
+/* Wavy underline on key words */
+.wavy {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--amber);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+/* Section labels get a star prefix */
+.section-label::before {
+  content: '✦ ';
+  font-family: var(--font-hand);
+}
+
+/* Scribble SVG line under hero name */
+.scribble-hero {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  margin-top: -4px;
+  margin-bottom: 20px;
+}
+
+/* Arrow doodle pointing at CTA */
+.doodle-arrow {
+  display: block;
+  margin-bottom: 4px;
+  transform: rotate(8deg);
+  transform-origin: left center;
+}
+
+/* Slight tilt on feature cards for messiness */
+.feature-card:nth-child(2n) { transform: rotate(0.4deg); }
+.feature-card:nth-child(3n) { transform: rotate(-0.3deg); }
+.feature-card:hover          { transform: rotate(0) scale(1.01); transition: transform 0.2s ease; }
+
+/* More varied photo tilts */
+.cr-photo-main { transform: rotate(-2deg);  box-shadow: 4px 6px 20px rgba(42,21,9,0.18); }
+.cr-photo-side { transform: rotate(3deg);   box-shadow: -3px 5px 18px rgba(42,21,9,0.15); }
 
 /* Community photo */
 .community-photo-wrap {
