@@ -729,22 +729,26 @@ footer {
   margin-top: 16px;
 }
 
-/* MIM photo — solo centered */
+/* MIM photos — two side by side */
 .cr-photos-row {
   display: flex;
   margin: 48px 0 0;
   justify-content: center;
+  gap: 24px;
+  align-items: flex-start;
 }
 .cr-photos-row img {
   border-radius: 4px;
   box-shadow: 5px 8px 28px rgba(26,15,8,0.18);
 }
 .cr-photo-main {
-  width: 72%;
-  max-width: 580px;
-  transform: rotate(-1.5deg);
+  width: 38%;
+  max-width: 340px;
 }
-.cr-photo-side { display: none; }
+.cr-photo-side {
+  width: 38%;
+  max-width: 340px;
+}
 
 /* Sections */
 .cr-section {
@@ -1017,6 +1021,6 @@ footer {
   .trust-badges { flex-direction: column; gap: 8px; align-items: center; }
   .contact-wrap { padding: 40px 24px; }
   .page-content { padding: 32px 24px; }
-  .cr-photos-row { flex-direction: column; align-items: center; }
-  .cr-photo-main, .cr-photo-side { width: 80%; }
+  .cr-photos-row { flex-direction: column; align-items: center; gap: 16px; }
+  .cr-photo-main, .cr-photo-side { width: 80%; max-width: 380px; }
 }
