@@ -611,6 +611,12 @@ h3 {
   display: inline-block;
   color: var(--purple);
 }
+.scrapbook-caption--below-foot {
+  margin: 14px 0 0;
+  transform: rotate(2deg);
+  display: inline-block;
+  color: var(--purple);
+}
 .scrapbook-caption--grandma {
   color: var(--text);
   font-size: 1.9rem;
