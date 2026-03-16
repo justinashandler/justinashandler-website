@@ -35,6 +35,7 @@ body {
 }
 .annotation-light {
   color: rgba(250, 247, 238, 0.65);
+  font-size: 2.6rem;
 }
 .annotation-dark {
   color: var(--dark);
