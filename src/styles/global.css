@@ -481,11 +481,17 @@ h3 {
 .muso-stats {
   margin-top: 64px;
 }
+.muso-stats--centered {
+  text-align: center;
+}
 .muso-tiles {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
   max-width: 760px;
+}
+.muso-stats--centered .muso-tiles {
+  margin: 0 auto;
 }
 .muso-tile {
   width: 100%;
