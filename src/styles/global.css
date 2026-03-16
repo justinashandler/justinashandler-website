@@ -586,7 +586,7 @@ h3 {
 }
 .scrapbook-caption--above  { margin-bottom: 18px; }
 .scrapbook-caption--slant  {
-  margin: 16px 0 0;
+  margin: 0 0 14px;
   transform: rotate(-3deg);
   display: inline-block;
   color: var(--purple);
