@@ -527,6 +527,64 @@ h3 {
 }
 .form-submit:hover { opacity: 0.85; }
 
+/* ── Contact page photos ── */
+.contact-photos-row {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 48px 60px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.contact-photos-row .contact-photo {
+  width: 38%;
+  max-width: 340px;
+  border-radius: 4px;
+}
+.contact-photo-block {
+  max-width: 500px;
+  margin: 0 auto 72px;
+  padding: 0 48px;
+  text-align: center;
+}
+.contact-annotation {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 2.2rem;
+  color: var(--accent);
+  line-height: 1.2;
+  display: block;
+  margin-bottom: 16px;
+}
+.contact-photo-feature {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 4px;
+}
+.contact-photo-foot {
+  max-width: 320px;
+}
+.contact-annotation--slant {
+  margin-top: 16px;
+  margin-bottom: 0;
+  transform: rotate(-3deg);
+  display: inline-block;
+  color: var(--purple);
+}
+.contact-photo-block--grandma {
+  margin-bottom: 80px;
+}
+.contact-photo-grandma {
+  max-width: 300px;
+  filter: sepia(20%);
+}
+.contact-annotation--grandma {
+  margin-top: 16px;
+  margin-bottom: 0;
+  font-size: 1.9rem;
+  color: var(--text);
+  opacity: 0.8;
+}
+
 /* ─────────────────────────────
    FOOTER
 ───────────────────────────── */
