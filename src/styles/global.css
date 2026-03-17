@@ -718,7 +718,7 @@ footer {
 .cr-wrap {
   max-width: 900px;
   margin: 0 auto;
-  padding: 40px 48px 80px;
+  padding: 80px 48px 80px;
   /* Coral accent replaces amber on MIM page */
   --accent: #d64063;
 }
@@ -1168,7 +1168,7 @@ footer {
   .music-section { padding: 56px 24px; }
   .instagram-section { padding: 24px; }
   .email-signup-home { padding: 48px 24px; }
-  .cr-wrap { padding: 24px 24px 60px; }
+  .cr-wrap { padding: 56px 24px 60px; }
   .cr-title { font-size: 2.4rem; }
   .features-grid { grid-template-columns: 1fr; }
   .features-grid .feature-card:last-child:nth-child(odd) { grid-column: auto; }
